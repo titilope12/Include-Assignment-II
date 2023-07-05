@@ -1,0 +1,173 @@
+body{
+    background-color: rgb(230, 244, 244);
+}
+main{
+    display: flex;
+    align-items: center;
+
+}
+.box-wrapper{
+    display: grid;
+    grid-template-rows: auto;
+    max-width: 55%;
+    margin-left: 20%;
+
+}
+
+.box1{
+    
+    position: relative;
+    margin-top: 6%;
+    height: 280px;
+    border: 2px;
+    background-color: white;
+    padding-left: 6%;
+    padding-right: 8%;
+    line-height: .5;
+    
+}
+h3{
+    color: rgb(98, 175, 184);
+    padding-top: 20px;
+
+    font-size: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.program{
+    color: rgb(154, 240, 67);
+    font-size: 27px;
+    font-weight: bold;
+    padding-top: 20px;
+    
+}
+.privilege{
+    
+    
+    color:rgb(152, 166, 189);
+    font-size: 24px;
+    padding-top: 10px;
+    line-height: 1.5;
+    
+}
+.payment-wrapper{
+    display: flex;
+}
+
+.box2{
+
+    flex: 1;
+    align-content: center;
+    height: 300px;
+    border: 2px;
+    background-color: rgb(76, 191, 182);
+    
+    padding-left: 4%;
+    padding-right: 2%;
+    line-height: 0px;
+    
+
+}
+.payment{
+    color: white;
+    font-size: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+
+}
+.price{
+    padding-top: 18px;
+    color: white;
+    font-size: 47px;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    padding-bottom: 0px;
+}
+.duration{
+    opacity: 40%;
+    font-size: 22px;
+    margin-top: 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+}
+.benefit{
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 0%;
+    
+    
+}
+.register{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: rgb(192, 218, 65);
+    width:90%;
+    height: 50px;
+    border-radius: 5%;
+    margin-top: 48px;
+}
+.click{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+.box3{
+    flex: 1;
+    justify-content:center;
+    background-color: rgb(131, 198, 187);
+    /*width: 22%;*/
+    padding-left: 4%;
+    padding-right: 0%;
+    
+}
+.duration1{
+    opacity: 40%;
+    font-size: 20px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: white;
+    line-height: .4;
+    padding-left: 0px;
+
+}
+@media only screen and (min-width:320px) and (max-width:1135px){
+    main{
+        height: auto;
+    }
+   .box-wrapper{
+    display:grid ;
+    grid-template-columns:repeat(1,2fr);
+    grid-template-rows:3;
+    
+   }
+   .payment-wrapper{
+    display: grid;
+   }                              
+    
+    .box1{
+        grid-row: 1 / 3;
+    }
+    .box2{
+    
+        grid-row: 2/ 3;
+    }
+    .box3{
+        grid-row: 3/ 3;
+    }
+    .program{
+        font-size: 20px;
+        line-height: .9;
+    }
+    .privilege{
+        font-size: 16px;
+    
+    }
+
+}
